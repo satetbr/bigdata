@@ -18,4 +18,4 @@ Dados do Censo 2010 (dados publicos) tratados para gerar indicadores e facilitar
 
 ## Imagens
 
-![Dashboard](https://github.com/user-attachments/assets/0302471b-56cc-443e-889f-ed08bf45b0e0)
+![Dashboard](https://github.com/user-attachments/assets/01b3ae8b-a945-4356-b48a-057b8ec9e3af)
