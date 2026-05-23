@@ -1,0 +1,16 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.8.0/schema.json",
+  "name": "123f47d1d2ca36f8cea4",
+  "position": {
+    "x": 9.0708661417322833,
+    "y": 319.70615243342513,
+    "z": 8000,
+    "height": 61.270225519330779,
+    "width": 320.03840842208774,
+    "tabOrder": 8000
+  },
+  "visualGroup": {
+    "displayName": "BOTAO FILTRO",
+    "groupMode": "ScaleMode"
+  }
+}

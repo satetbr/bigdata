@@ -1,0 +1,46 @@
+table CONCURSOS
+	lineageTag: 5354f2d5-a803-41a6-9fdd-9520b1a547c9
+
+	measure 'HOMEM 10 A 19' = SUMX(dados,dados[HOMEM10A14]+dados[HOMEM15A19])
+		formatString: 0
+		lineageTag: 8331893d-1cc2-4047-b34b-3de3c1993648
+
+	measure 'PESO1618 mais PESO1921' =
+			
+			SUM('dados'[PESO1618]) + SUM('dados'[PESO1921])
+		formatString: 0
+		lineageTag: eda22628-1717-4c08-9b48-7039d88ba225
+
+		extendedProperty MeasureTemplate =
+				{
+				  "version": 0,
+				  "daxTemplateName": "MathematicalAddition"
+				}
+
+		changedProperty = FormatString
+
+	measure 'POP 12 A 20' = ```
+			SUMX('dados',dados[PESO1214] + dados[PESO1517] + dados[PESO1820]) 
+			```
+		formatString: 0
+		lineageTag: b7703c8a-6e84-43c4-b16b-85c4e819ecf3
+
+	column Provas
+		dataType: string
+		lineageTag: 2150fbdf-faf0-4e3b-9a44-e763b1fb788e
+		summarizeBy: none
+		sourceColumn: Provas
+
+		annotation SummarizationSetBy = Automatic
+
+	partition CONCURSOS = m
+		mode: import
+		source =
+				let
+				    Fonte = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText("i45Wci0OcHatUIrViVZy9gNTrgHOjkFglqObI0QkGEpDFLhB1bn5+/pCWK5QDZ4hEIXOTr6uQV4QOUeoGkf3YKXYWAA=", BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type nullable text) meta [Serialized.Text = true]) in type table [Provas = _t]),
+				    #"Tipo Alterado" = Table.TransformColumnTypes(Fonte,{{"Provas", type text}})
+				in
+				    #"Tipo Alterado"
+
+	annotation PBI_ResultType = Table
+

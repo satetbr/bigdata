@@ -1,0 +1,20 @@
+model Model
+	culture: pt-BR
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: pt-BR
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+annotation PBI_QueryOrder = ["dados","CONCURSOS"]
+
+annotation __PBI_TimeIntelligenceEnabled = 1
+
+annotation PBI_ProTooling = ["DevMode"]
+
+ref table dados
+ref table DateTableTemplate_beddae8b-6486-45d9-8d89-259cb5bb2b0c
+ref table CONCURSOS
+
+ref cultureInfo pt-BR
+

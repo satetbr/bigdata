@@ -1,0 +1,72 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/2.1.0/schema.json",
+  "name": "ReportSectionf491e8005bea51747f09",
+  "displayName": "EAM",
+  "displayOption": "FitToPage",
+  "height": 720,
+  "width": 1280,
+  "filterConfig": {
+    "filterSortOrder": "Ascending"
+  },
+  "pageBinding": {
+    "name": "Pod4",
+    "type": "Default",
+    "parameters": [],
+    "referenceScope": "CrossReport",
+    "acceptsFilterContext": "None"
+  },
+  "objects": {
+    "background": [
+      {
+        "properties": {
+          "image": {
+            "image": {
+              "name": {
+                "expr": {
+                  "Literal": {
+                    "Value": "'fundo camo.png'"
+                  }
+                }
+              },
+              "url": {
+                "expr": {
+                  "ResourcePackageItem": {
+                    "PackageName": "RegisteredResources",
+                    "PackageType": 1,
+                    "ItemName": "fundo_camo8110318955588924.png"
+                  }
+                }
+              },
+              "scaling": {
+                "expr": {
+                  "Literal": {
+                    "Value": "'Normal'"
+                  }
+                }
+              }
+            }
+          },
+          "transparency": {
+            "expr": {
+              "Literal": {
+                "Value": "0D"
+              }
+            }
+          }
+        }
+      }
+    ]
+  },
+  "visualInteractions": [
+    {
+      "source": "bcd98643462347e6890e",
+      "target": "2149f220f135ba35d0c1",
+      "type": "DataFilter"
+    },
+    {
+      "source": "2149f220f135ba35d0c1",
+      "target": "bcd98643462347e6890e",
+      "type": "NoFilter"
+    }
+  ]
+}

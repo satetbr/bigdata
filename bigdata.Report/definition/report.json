@@ -1,0 +1,113 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/report/3.2.0/schema.json",
+  "themeCollection": {
+    "baseTheme": {
+      "name": "CY24SU02",
+      "reportVersionAtImport": {
+        "visual": "1.8.89",
+        "report": "2.0.89",
+        "page": "1.3.89"
+      },
+      "type": "SharedResources"
+    },
+    "customTheme": {
+      "name": "AccessibleDefault",
+      "reportVersionAtImport": {
+        "visual": "1.8.89",
+        "report": "2.0.89",
+        "page": "1.3.89"
+      },
+      "type": "SharedResources"
+    }
+  },
+  "objects": {
+    "section": [
+      {
+        "properties": {
+          "verticalAlignment": {
+            "expr": {
+              "Literal": {
+                "Value": "'Top'"
+              }
+            }
+          }
+        }
+      }
+    ],
+    "outspacePane": [
+      {
+        "properties": {
+          "expanded": {
+            "expr": {
+              "Literal": {
+                "Value": "false"
+              }
+            }
+          }
+        }
+      }
+    ]
+  },
+  "publicCustomVisuals": [
+    "googleMapsPbiVisual2982D2C8868A4D07BE77AE3D0F9F87C3"
+  ],
+  "resourcePackages": [
+    {
+      "name": "SharedResources",
+      "type": "SharedResources",
+      "items": [
+        {
+          "name": "AccessibleDefault",
+          "path": "BuiltInThemes/AccessibleDefault.json",
+          "type": "CustomTheme"
+        },
+        {
+          "name": "CY24SU02",
+          "path": "BaseThemes/CY24SU02.json",
+          "type": "BaseTheme"
+        }
+      ]
+    },
+    {
+      "name": "RegisteredResources",
+      "type": "RegisteredResources",
+      "items": [
+        {
+          "name": "31266754989350379831081.png",
+          "path": "31266754989350379831081.png",
+          "type": "Image"
+        },
+        {
+          "name": "fundo_camo8110318955588924.png",
+          "path": "fundo_camo8110318955588924.png",
+          "type": "Image"
+        },
+        {
+          "name": "Imagem13603824250028209.png",
+          "path": "Imagem13603824250028209.png",
+          "type": "Image"
+        },
+        {
+          "name": "unibe_logo_branco36857365413827514.png",
+          "path": "unibe_logo_branco36857365413827514.png",
+          "type": "Image"
+        }
+      ]
+    }
+  ],
+  "settings": {
+    "useStylableVisualContainerHeader": true,
+    "exportDataMode": "AllowSummarized",
+    "defaultDrillFilterOtherVisuals": true,
+    "allowChangeFilterTypes": true,
+    "useEnhancedTooltips": true,
+    "useDefaultAggregateDisplayName": true
+  },
+  "slowDataSourceSettings": {
+    "isCrossHighlightingDisabled": false,
+    "isSlicerSelectionsButtonEnabled": false,
+    "isFilterSelectionsButtonEnabled": false,
+    "isFieldWellButtonEnabled": false,
+    "isApplyAllButtonEnabled": false
+  }
+}

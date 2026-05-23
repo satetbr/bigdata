@@ -1,0 +1,628 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/bookmark/2.1.0/schema.json",
+  "displayName": "CBMERJ",
+  "name": "Bookmark8ecd76c0f5c8d45262d0",
+  "options": {
+    "targetVisualNames": []
+  },
+  "explorationState": {
+    "version": "1.3",
+    "activeSection": "ReportSection52f9ef7ac9fa672088f0",
+    "sections": {
+      "ReportSection52f9ef7ac9fa672088f0": {
+        "visualContainers": {
+          "481e9ab082fa660cf832": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "Filter5af4f8abf80cc216a45b",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "dados"
+                        }
+                      },
+                      "Property": "NOME_MUN"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "Filterb3c5152995a55bd3fc09",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "dados"
+                        }
+                      },
+                      "Property": "RegiaoAjustada"
+                    }
+                  },
+                  "howCreated": 1
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "filledMap",
+              "objects": {},
+              "activeProjections": {
+                "Category": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "dados"
+                        }
+                      },
+                      "Property": "NOME_MUN"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "0bb4ad7ac02e975de261": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "ae5f9daeaf18b3c44e32",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "dados"
+                        }
+                      },
+                      "Property": "NOME_MUN"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "slicer",
+              "objects": {
+                "merge": {
+                  "data": [
+                    {
+                      "properties": {
+                        "mode": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "'Basic'"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ],
+                  "selection": [
+                    {
+                      "properties": {
+                        "strictSingleSelect": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "false"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "activeProjections": {
+                "Values": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "dados"
+                        }
+                      },
+                      "Property": "NOME_MUN"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "d2c4ff0edaeb9957daf8": {
+            "singleVisual": {
+              "visualType": "image",
+              "objects": {}
+            }
+          },
+          "94a8e615d5e28dea3aa8": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "a496b38e6731a073c9c4",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "CONCURSOS"
+                        }
+                      },
+                      "Property": "Provas"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "slicer",
+              "objects": {
+                "merge": {
+                  "general": [
+                    {
+                      "properties": {
+                        "filter": {
+                          "filter": {
+                            "Version": 2,
+                            "From": [
+                              {
+                                "Name": "c",
+                                "Entity": "CONCURSOS",
+                                "Type": 0
+                              }
+                            ],
+                            "Where": [
+                              {
+                                "Condition": {
+                                  "In": {
+                                    "Expressions": [
+                                      {
+                                        "Column": {
+                                          "Expression": {
+                                            "SourceRef": {
+                                              "Source": "c"
+                                            }
+                                          },
+                                          "Property": "Provas"
+                                        }
+                                      }
+                                    ],
+                                    "Values": [
+                                      [
+                                        {
+                                          "Literal": {
+                                            "Value": "'CBMERJ'"
+                                          }
+                                        }
+                                      ]
+                                    ]
+                                  }
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      }
+                    }
+                  ],
+                  "data": [
+                    {
+                      "properties": {
+                        "mode": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "'Basic'"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ],
+                  "selection": [
+                    {
+                      "properties": {
+                        "strictSingleSelect": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "true"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "activeProjections": {
+                "Values": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "CONCURSOS"
+                        }
+                      },
+                      "Property": "Provas"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "a5c642111ddeb768662c": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "96440c2cf7fdd3166aa4",
+                  "type": "Advanced",
+                  "expression": {
+                    "Aggregation": {
+                      "Expression": {
+                        "Column": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Entity": "dados"
+                            }
+                          },
+                          "Property": "PESOTOT"
+                        }
+                      },
+                      "Function": 0
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "card",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Aggregation": {
+                      "Expression": {
+                        "Column": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Entity": "dados"
+                            }
+                          },
+                          "Property": "PESOTOT"
+                        }
+                      },
+                      "Function": 0
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "5cd472e6a387b84ff277": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "9692e941d03cae24997d",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "dados"
+                        }
+                      },
+                      "Property": "HOMEM15A19 mais HOMEM20A24"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "card",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "dados"
+                        }
+                      },
+                      "Property": "HOMEM15A19 mais HOMEM20A24"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "0ddd8e402a1f7fa82830": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "2bb7d94b9d7053a2470a",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "dados"
+                        }
+                      },
+                      "Property": "RENDABRUTA dividido por PESOTOT"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "card",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "dados"
+                        }
+                      },
+                      "Property": "RENDABRUTA dividido por PESOTOT"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "342e30e6f3698dcdf357": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "2d7aa3909235c7e5dd33",
+                  "type": "Advanced",
+                  "expression": {
+                    "Aggregation": {
+                      "Expression": {
+                        "Column": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Entity": "dados"
+                            }
+                          },
+                          "Property": "T_FUND18A24"
+                        }
+                      },
+                      "Function": 1
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "card",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Aggregation": {
+                      "Expression": {
+                        "Column": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Entity": "dados"
+                            }
+                          },
+                          "Property": "T_FUND18A24"
+                        }
+                      },
+                      "Function": 1
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "aff60594132ae215caa6": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "a7c1f984fc27669b553e",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "dados"
+                        }
+                      },
+                      "Property": "MULH15A19 mais MULH20A24"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "card",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "dados"
+                        }
+                      },
+                      "Property": "MULH15A19 mais MULH20A24"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "e2a32749e54d70bc0ca0": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "90ff124b3d02e8acadc4",
+                  "type": "Advanced",
+                  "expression": {
+                    "Aggregation": {
+                      "Expression": {
+                        "Column": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Entity": "dados"
+                            }
+                          },
+                          "Property": "RENDABRUTA"
+                        }
+                      },
+                      "Function": 0
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "card",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Aggregation": {
+                      "Expression": {
+                        "Column": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Entity": "dados"
+                            }
+                          },
+                          "Property": "RENDABRUTA"
+                        }
+                      },
+                      "Function": 0
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "bfe6dd96ce7e43fb9b9c": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "68803f4ef423c6537b5e",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "dados"
+                        }
+                      },
+                      "Property": "NOME_UDH"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "slicer",
+              "objects": {
+                "merge": {
+                  "data": [
+                    {
+                      "properties": {
+                        "mode": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "'Basic'"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ],
+                  "selection": [
+                    {
+                      "properties": {
+                        "strictSingleSelect": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "false"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "activeProjections": {
+                "Values": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "dados"
+                        }
+                      },
+                      "Property": "NOME_UDH"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "3ec30d0d502f167118b1": {
+            "singleVisual": {
+              "visualType": "shape",
+              "objects": {}
+            }
+          },
+          "82faa6f3fb92b2f842db": {
+            "singleVisual": {
+              "visualType": "image",
+              "objects": {}
+            }
+          }
+        }
+      }
+    },
+    "objects": {
+      "merge": {
+        "outspacePane": [
+          {
+            "properties": {
+              "expanded": {
+                "expr": {
+                  "Literal": {
+                    "Value": "false"
+                  }
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}
